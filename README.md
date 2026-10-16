@@ -33,6 +33,10 @@ Submit the **source commit URL** on Canvas, in the form `https://github.com/OWNE
 
 The three stylesheets are written independently. Each includes responsive rules. Check all three buttons on both the index and a book page; use Firefox Responsive Design Mode at phone and desktop widths. For print, choose Minimal, then print to PDF and inspect headings, page breaks, and margins.
 
+## Development
+
+Developed by Rahul with AI assistance for implementation and checks.
+
 ## Sources
 
 Book HTML was retrieved October 16, 2026, from:
@@ -53,4 +57,4 @@ make html
 python scripts/check_output.py
 ```
 
-The output check verifies the article count, document structure, local destinations, chapter fragments, stylesheets, and `.nojekyll`. A production build requires the actual Pages URL; a deliberately missing `SITEURL` fails early to prevent publishing broken paths.
+The output check verifies the article count, document structure, local destinations, chapter fragments, stylesheets, and `.nojekyll`. Production builds use the repository’s GitHub Pages URL configured in `publishconf.py`. The `SITEURL` environment variable can override it.

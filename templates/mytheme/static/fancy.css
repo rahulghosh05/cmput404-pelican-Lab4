@@ -1,4 +1,4 @@
-/* Original CSS by Rahul for CMPUT 404. Modern bookstore: top navigation and a grid shelf. */
+/* CMPUT 404 custom CSS. Modern bookstore: top navigation and a grid shelf. */
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; background: #f5f3ec; color: #173f36; }
 body { margin: 0; font: 16px/1.65 'Avenir Next', 'Segoe UI', sans-serif; }
