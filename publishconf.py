@@ -1,7 +1,7 @@
 import os
 from pelicanconf import *
-# Set this to the Classroom Pages URL before deploying, or export SITEURL.
-SITEURL = os.environ.get('SITEURL', '')
+# GitHub Pages project URL; override with SITEURL for another deployment.
+SITEURL = os.environ.get('SITEURL', 'https://rahulghosh05.github.io/cmput404-pelican-Lab4')
 RELATIVE_URLS = False
 DELETE_OUTPUT_DIRECTORY = True
 if not SITEURL:
