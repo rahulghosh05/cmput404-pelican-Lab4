@@ -1,0 +1,3 @@
+{% extends 'base.html' %}
+{% block title %}{{ article.title }} · {{ SITENAME }}{% endblock %}
+{% block content %}<article class="reading"><header class="reading-header"><p class="eyebrow">{{ article.category }} / {{ article.shelf }}</p><h1>{{ article.title }}</h1><p class="byline">{{ article.author }} · <time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time></p></header><div class="book-text">{{ article.content }}</div><a class="back-link" href="{{ SITEURL }}/index.html">← Back to the collection</a></article>{% endblock %}

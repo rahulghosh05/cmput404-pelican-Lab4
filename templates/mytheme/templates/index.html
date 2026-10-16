@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="intro"><p class="eyebrow">FIELD NOTES / THE LIBRARY</p><h1>For the<br>curious ones.</h1><p class="lede">Follow a rabbit. Question a creation. Travel through time.<br>Extraordinary worlds, one page away.</p><span class="decoration" aria-hidden="true"></span></section>
+<section class="collection" aria-labelledby="collection-title"><h2 id="collection-title">On the shelf <span>04 entries</span></h2>
+<div class="shelf">{% for item in articles|sort(attribute='shelf') %}
+<article class="card"><a class="cover cover-{{ item.slug }}" href="{{ SITEURL }}/{{ item.url }}" aria-label="Read {{ item.title }}"><span class="cover-number">{{ item.shelf }}</span><span class="cover-symbol" aria-hidden="true">{{ item.symbol }}</span><span class="cover-title">{{ item.title }}</span></a><div class="card-info"><p class="eyebrow">{{ item.category }}</p><h3><a href="{{ SITEURL }}/{{ item.url }}">{{ item.title }}</a></h3><p class="byline">{{ item.author }}</p><div class="summary">{{ item.summary }}</div><a class="read-link" href="{{ SITEURL }}/{{ item.url }}">Open the book <span aria-hidden="true">↗</span></a></div></article>
+{% endfor %}</div></section>
+{% endblock %}
