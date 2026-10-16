@@ -1,0 +1,48 @@
+/* Original CSS. Retro portal: right-hand directory, bright panels, and tiled stars. */
+html { color: #ffff80; background-color: #08052b; background-image: radial-gradient(circle at 13px 17px,#fff 1px,transparent 2px),radial-gradient(circle at 61px 53px,#4af 1px,transparent 2px); background-size: 83px 79px,127px 117px; font: 16px/1.5 'Comic Sans MS', 'Chalkboard SE', cursive; }
+body { margin: 18px; padding-right: 245px; }
+a { color: #00ffff; text-decoration: underline; font-weight: bold; }
+a:visited { color: #ff9bff; }a:hover { color: #fff; background: #9b007d; }
+a:focus-visible,button:focus-visible { outline: 3px dashed yellow; outline-offset: 4px; }
+.skip { display: inline-block; font: 11px monospace; padding: 3px 8px; background: black; }
+.masthead { text-align: center; border: 8px ridge #a19be5; background: linear-gradient(90deg,#230366,#590960,#230366); padding: 22px 12px; margin: 12px 0 22px; }
+.brand { font: bold 36px/1.2 Impact,'Arial Black',sans-serif; color: #ffea00; text-shadow: 3px 3px #ff0080; text-decoration: none; }
+.mark::before { content: '★'; color: #0ff; display: inline-block; margin-right: 12px; }
+.tagline { color: #fff; letter-spacing: 3px; font-size: 12px; }
+.modes { border: 2px outset #fff; background: #b4b4b4; display: inline-block; padding: 5px; }
+button { font: bold 14px 'Courier New',monospace; color: navy; background: #ddd; border: 3px outset #eee; padding: 5px 12px; cursor: pointer; margin: 3px; }
+button:active { border-style: inset; }button:hover { background: yellow; }
+.navigation { position: absolute; right: 18px; top: 60px; width: 190px; padding: 14px; background: #000; border: 5px double #00ffff; text-align: center; }
+.nav-label { color: #f0f; font: bold 18px Impact,sans-serif; text-transform: uppercase; }
+.navigation a { display: block; padding: 13px 5px; border-bottom: 2px dashed #6666ff; font-size: 14px; }
+.navigation a::before { content: '➤ '; color: #ff0; }
+main { min-width: 0; }
+.intro { text-align: center; border: 4px dotted #ffff00; background: #000060; padding: 25px 15px; }
+.eyebrow { font: bold 12px 'Courier New',monospace; color: #ff73fc; letter-spacing: 1px; }
+h1 { font: bold 48px/1.1 Impact,'Arial Black',sans-serif; color: #0ff; text-shadow: 3px 3px #b500ff; margin: 20px 0; text-transform: uppercase; }
+.intro h1 br { display: none; }.lede { font-size: 18px; color: #fff; }
+.decoration::before { content: '✧ WELCOME TO MY CORNER OF CYBERSPACE ✧'; display: block; background: yellow; color: #000080; font: bold 12px monospace; padding: 8px; transform: rotate(-2deg); margin: 25px auto 0; max-width: 450px; }
+.collection { margin-top: 28px; }h2 { color: #00ff00; font: bold 28px Impact,sans-serif; text-decoration: underline; }
+.collection h2 { background: black; padding: 10px; border: 3px outset #888; }.collection h2 span { float: right; font: 14px monospace; color: yellow; }
+.shelf { display: block; }.card { display: grid; grid-template-columns: 150px 1fr; background: #190044; border: 6px ridge #aa78dd; margin: 22px 0; padding: 16px; gap: 20px; }
+.cover { background: repeating-linear-gradient(45deg,#080848 0 8px,#27115b 8px 16px); border: 3px double #ff00ff; display: block; text-align: center; padding: 12px; text-decoration: none; }
+.cover-number { font: bold 18px monospace; color: yellow; display: block; }.cover-symbol { font-size: 55px; display: block; color: #0f0; text-shadow: 2px 2px red; }.cover-title { display: block; color: white; font: bold 17px Impact,sans-serif; }
+.card-info { min-width: 0; }.card-info .eyebrow::before { content: '★ '; color: yellow; }
+h3 { font: bold 25px Impact,sans-serif; margin: 10px 0; }h3 a { color: #0ff; }
+.byline { font: bold 13px 'Courier New',monospace; color: #adff2f; }
+.summary { font-size: 15px; color: white; }.summary p { margin: 10px 0; }
+.read-link { display: inline-block; background: #000; border: 3px outset #b98dde; padding: 5px 12px; font: bold 12px monospace; }.read-link span { color: yellow; }
+.reading { padding: 20px; border: 7px groove #be8ef0; background: #0d0033; }.reading-header { text-align: center; border-bottom: 4px double #f0f; padding-bottom: 20px; margin-bottom: 30px; }
+.book-text { color: #f4e9ff; font-family: 'Trebuchet MS',sans-serif; overflow-wrap: anywhere; }.book-text p { margin: 22px 0; padding-bottom: 9px; border-bottom: 1px dotted #493c6c; }
+.book-text h1, .book-text h2, .book-text h3, .book-text h4, .book-text h5, .book-text h6 { font-family: Impact,sans-serif; color: yellow; background: #35005d; padding: 12px; border: 2px outset #8c61c8; text-align: center; margin: 35px 0 20px; }
+.book-text h1 { font-size: 32px; }.book-text h2 { font-size: 28px; }.book-text h3 { font-size: 24px; }.book-text h4 { font-size: 22px; }.book-text h5,.book-text h6 { font-size: 19px; }
+.book-text .source { border: 3px dashed #0ff; padding: 15px; background: #000; color: #ffb6ff; font: 13px/1.6 monospace; }.book-body { padding: 5px; }
+.book-text blockquote { background: #252057; border: 3px inset #8877aa; padding: 15px; margin: 20px; color: #ffb7ff; }
+.book-text pre { font: 13px/1.6 monospace; white-space: pre-wrap; padding: 10px; border: 2px dotted lime; background: black; }
+.book-text em,.book-text i { color: #ffb5eb; }.book-text strong,.book-text b { color: #ffff00; text-shadow: 1px 1px #b00070; }
+.book-text hr { height: 8px; border: 2px inset #cf99ff; background: linear-gradient(90deg,#f0f,#0ff,#ff0); margin: 30px 0; }
+.book-text ul,.book-text ol { border-left: 3px dashed #a800ff; padding-left: 30px; }.book-text li { padding: 4px; }.book-text sup,.book-text sub { color: lime; font-size: 75%; }
+.back-link { display: block; border: 3px outset #aaa; padding: 10px; background: #222; margin-top: 30px; text-align: center; }
+.site-footer { text-align: center; background: #000; border: 4px ridge #888; padding: 18px; margin-top: 30px; font: 12px monospace; }.site-footer p { color: lime; font-size: 16px; }.site-footer span { display: block; color: #fff; margin-top: 14px; }time { background: #252057; }
+@media (max-width: 900px) { body { padding-right: 190px; margin: 10px; }.navigation { right: 10px; width: 150px; padding: 8px; }.brand { font-size: 28px; }.card { grid-template-columns: 100px 1fr; gap: 12px; padding: 10px; }.cover { padding: 6px; }.cover-title { font-size: 14px; } }
+@media (max-width: 600px) { body { padding: 0; }.navigation { position: static; width: auto; margin-top: 25px; }.navigation a { display: inline-block; margin: 4px; padding: 5px; }.masthead { padding: 15px 6px; }h1 { font-size: 35px; }.card { grid-template-columns: 1fr; }.cover { display: grid; grid-template-columns: 25px 40px 1fr; align-items: center; gap: 12px; }.cover-symbol { font-size: 30px; }.cover-title { font-size: 20px; }.reading { padding: 12px; }.book-text blockquote { margin: 15px 0; }.collection h2 span { float: none; display: block; }.tagline { letter-spacing: 1px; } }

@@ -1,0 +1,55 @@
+/* Original CSS. Reading edition: left rail and a single typographic column. */
+html { background: white; color: #202020; font: 18px/1.7 'Palatino Linotype', Palatino, 'Book Antiqua', serif; }
+body { margin: 0 5vw 0 280px; }
+a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: .2em; }
+a:hover { text-decoration-style: double; }
+a:focus-visible, button:focus-visible { outline: 2px solid black; outline-offset: 3px; }
+.skip { display: block; font-size: 12px; text-align: right; padding: 10px; }
+.masthead { margin: 65px auto 40px; max-width: 760px; }
+.brand { font-size: 24px; text-decoration: none; font-variant: small-caps; letter-spacing: .08em; }
+.mark::before { content: '¶'; margin-right: .5em; font-size: 30px; }
+.tagline { font-size: 12px; margin-top: 4px; }
+.modes { margin-top: 24px; }
+button { background: transparent; border: none; border-bottom: 1px dotted #777; padding: 3px 0; margin-right: 22px; color: #222; font: 13px Palatino,serif; cursor: pointer; }
+button:hover { border-bottom-style: solid; }
+.navigation { position: fixed; left: 35px; top: 100px; width: 190px; border-right: 1px solid #ddd; padding-right: 20px; }
+.nav-label { font-size: 12px; font-variant: small-caps; letter-spacing: .12em; margin-bottom: 25px; }
+.navigation a { display: block; font-size: 14px; line-height: 1.4; margin-bottom: 22px; text-decoration: none; }
+.navigation a::before { content: '§ '; color: #999; }
+main { max-width: 760px; margin: auto; }
+.intro { margin-bottom: 70px; }
+.eyebrow { font: 11px/1.5 'Courier New',monospace; letter-spacing: .1em; }
+h1 { font-size: 46px; font-weight: normal; line-height: 1.2; margin: 25px 0; }
+.intro h1 br { display: none; }
+.lede { max-width: 520px; font-style: italic; color: #555; }
+.decoration::after { content: '❧'; display: block; font-size: 35px; margin-top: 25px; }
+.collection { margin-top: 30px; }
+h2 { font-size: 26px; font-weight: normal; }
+.collection h2 span { font: 11px 'Courier New',monospace; margin-left: 20px; }
+.shelf { counter-reset: entries; }
+.card { position: relative; padding: 30px 0 30px 65px; border-top: 1px solid #ccc; }
+.cover { position: absolute; top: 32px; left: 0; text-decoration: none; font: 24px 'Courier New',monospace; }
+.cover-number { color: #888; }.cover-symbol, .cover-title { display: none; }
+.card-info { padding: 0; }
+h3 { font-size: 25px; line-height: 1.3; font-weight: normal; margin: 8px 0; }
+h3 a { text-decoration: none; }
+.byline { font-size: 13px; font-style: italic; }
+.summary { font-size: 17px; }.summary p { margin: 14px 0; }
+.read-link { font-size: 13px; }.read-link span { margin-left: 6px; }
+.reading { padding-bottom: 40px; }.reading-header { margin-bottom: 45px; }.reading-header h1 { font-size: 42px; }
+.book-text { text-align: justify; overflow-wrap: anywhere; hyphens: auto; }
+.book-text p { margin: 0; text-indent: 1.7em; }.book-text p:first-child { text-indent: 0; }
+.book-text h1, .book-text h2, .book-text h3, .book-text h4, .book-text h5, .book-text h6 { text-align: center; font-weight: normal; margin: 2.5em 0 1em; break-after: avoid; }
+.book-text h1 { font-size: 32px; }.book-text h2 { font-size: 27px; }.book-text h3 { font-size: 23px; }.book-text h4 { font-size: 21px; }.book-text h5, .book-text h6 { font-size: 18px; font-variant: small-caps; }
+.book-text .source { font: 12px/1.6 'Courier New',monospace; text-indent: 0; margin-bottom: 40px; text-align: left; }
+.book-body { margin-top: 15px; }
+.book-text blockquote { font-size: 95%; margin: 25px 45px; font-style: italic; }
+.book-text pre { white-space: pre-wrap; font: 13px/1.8 'Courier New',monospace; margin: 30px 0; }
+.book-text em, .book-text i { font-style: italic; }.book-text strong, .book-text b { font-weight: 600; }
+.book-text hr { border: none; text-align: center; margin: 35px 0; }.book-text hr::after { content: '*  *  *'; }
+.book-text ul, .book-text ol { padding-left: 40px; }.book-text li { padding-left: 8px; }.book-text sup, .book-text sub { font-size: .7em; }
+.back-link { display: block; text-align: right; margin-top: 60px; font-size: 14px; }
+.site-footer { margin: 70px auto 30px; max-width: 760px; border-top: 1px solid #aaa; padding-top: 20px; font-size: 12px; }
+.site-footer p { font-style: italic; }.site-footer a { display: inline; }.site-footer span { display: block; margin-top: 8px; }time { font-style: normal; }
+@media screen and (max-width: 800px) { body { margin: 0 7%; }.masthead { margin-top: 30px; }.navigation { position: static; width: auto; border: 0; border-bottom: 1px solid #ddd; margin-bottom: 35px; padding: 10px 0; }.navigation a { display: inline-block; margin: 6px 18px 6px 0; }.nav-label { margin: 0 0 8px; }.intro { margin-bottom: 35px; }h1 { font-size: 36px; }.card { padding-left: 45px; }.book-text { text-align: left; } }
+@media print { html { font-size: 11pt; color: black; }body { margin: 0; }.navigation, .modes, .skip, .back-link { display: none; }.masthead { margin: 0 0 20pt; }.mark, .decoration { display: none; }main, .site-footer { max-width: none; }.intro { margin-bottom: 20pt; }.cover { position: static; float: left; margin-right: 15pt; }.card { padding: 12pt 0; break-inside: avoid; }.reading-header { margin-bottom: 20pt; }.book-text a { text-decoration: none; }.source a::after { content: ' (' attr(href) ')'; font-size: 8pt; }.site-footer { margin-top: 20pt; }.book-text p { orphans: 3; widows: 3; } }

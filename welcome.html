@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A shelf for curious minds · The Curious Shelf</title>
+<meta name="description" content="A small library of curious journeys, curated by Rahul.">
+<link id="_stylesheet" rel="stylesheet" href="https://rahulghosh05.github.io/cmput404-pelican-Lab4/theme/fancy.css">
+<script>
+function changeStylesheet(style) {
+    if (!['fancy.css', 'minimal.css', '90s.css'].includes(style)) return;
+    const sheet = document.getElementById('_stylesheet');
+    sheet.href = sheet.href.replace(/[^/]*\.css$/, style);
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<a class="brand" href="https://rahulghosh05.github.io/cmput404-pelican-Lab4/index.html"><span class="mark" aria-hidden="true"></span>The Curious Shelf</a>
+<p class="tagline">A reading room by Rahul · Est. 2026</p>
+<div class="modes" role="group" aria-label="Choose a visual style">
+<button type="button" onclick="changeStylesheet('fancy.css')">Fancy</button>
+<button type="button" onclick="changeStylesheet('minimal.css')">Minimal</button>
+<button type="button" onclick="changeStylesheet('90s.css')">90s</button>
+</div>
+</header>
+<nav class="navigation" aria-label="Library">
+<p class="nav-label">Explore the shelf</p>
+<a href="https://rahulghosh05.github.io/cmput404-pelican-Lab4/index.html">The collection</a>
+<a href="https://rahulghosh05.github.io/cmput404-pelican-Lab4/welcome.html">A shelf for curious minds</a><a href="https://rahulghosh05.github.io/cmput404-pelican-Lab4/alice.html">Alice’s Adventures in Wonderland</a><a href="https://rahulghosh05.github.io/cmput404-pelican-Lab4/frankenstein.html">Frankenstein</a><a href="https://rahulghosh05.github.io/cmput404-pelican-Lab4/time-machine.html">The Time Machine</a></nav>
+<main id="main"><article class="reading"><header class="reading-header"><p class="eyebrow">Journal / 00</p><h1>A shelf for curious minds</h1><p class="byline">Rahul · <time datetime="2026-10-16T09:00:00-06:00">Fri 16 October 2026</time></p></header><div class="book-text"><h2>Step into another world</h2>
+<p>Welcome to <strong>The Curious Shelf</strong>, my little reading room for CMPUT 404. I chose three books about curiosity: Alice follows a rabbit, a scientist creates life, and a traveller crosses time. Each story starts with someone asking what might lie beyond the familiar.</p>
+<p>The collection brings together <em>Alice’s Adventures in Wonderland</em>, <em>Frankenstein</em>, and <em>The Time Machine</em>. Their full texts come from Project Gutenberg; each book includes its source and original licensing information.</p>
+<h2>Three ways to visit</h2>
+<p>Use the three style buttons to change the atmosphere. Fancy is a contemporary bookshelf with a spacious reading surface. Minimal is a restrained reading and printing edition. The 90s portal is my tribute to the bright, slightly chaotic early web.</p>
+<p>My favourite part of this experiment is how the same words can feel different when the space around them changes. Pick a book, try a different room, and stay for a chapter.</p></div><a class="back-link" href="https://rahulghosh05.github.io/cmput404-pelican-Lab4/index.html">← Back to the collection</a></article></main>
+<footer class="site-footer"><p>A little curiosity goes a long way.</p><a href="https://www.gutenberg.org/">Books from Project Gutenberg</a><span>Built with Pelican · CMPUT 404</span></footer>
+</body>
+</html>

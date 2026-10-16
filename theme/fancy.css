@@ -1,0 +1,66 @@
+/* Original CSS by Rahul for CMPUT 404. Modern bookstore: top navigation and a grid shelf. */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; background: #f5f3ec; color: #173f36; }
+body { margin: 0; font: 16px/1.65 'Avenir Next', 'Segoe UI', sans-serif; }
+a { color: #176c55; text-underline-offset: 4px; }
+a:hover { color: #a34327; }
+a:focus-visible, button:focus-visible { outline: 3px solid #bf5930; outline-offset: 5px; }
+.skip { position: absolute; top: -80px; padding: 12px; background: white; z-index: 5; }
+.skip:focus { top: 0; }
+.masthead { display: flex; align-items: center; gap: 28px; padding: 24px 5%; border-bottom: 1px solid #d8ddd3; }
+.brand { display: flex; align-items: center; gap: 12px; font-weight: 800; font-size: 23px; letter-spacing: -1px; text-decoration: none; color: #173f36; }
+.mark { width: 30px; height: 34px; display: inline-block; background: linear-gradient(90deg, #173f36 45%, transparent 45%, transparent 55%, #be623a 55%); border-radius: 3px 10px 3px 3px; transform: rotate(-8deg); }
+.tagline { font-size: 12px; color: #61766c; margin-right: auto; }
+.modes { display: flex; gap: 5px; padding: 5px; background: #e8ebe2; border-radius: 30px; }
+button { font: inherit; font-size: 12px; border: 0; border-radius: 20px; background: #fffdf6; color: #21483b; padding: 8px 16px; cursor: pointer; }
+button:hover { background: #173f36; color: white; }
+.navigation { display: flex; flex-wrap: wrap; gap: 24px; padding: 14px 5%; background: #fffdf7; font-size: 12px; }
+.navigation a { text-decoration: none; font-weight: 600; }
+.nav-label { margin: 0 auto 0 0; color: #788276; text-transform: uppercase; letter-spacing: 2px; font-size: 10px; }
+main { max-width: 1340px; margin: auto; padding: 0 5% 70px; }
+.intro { padding: 66px 0 50px; position: relative; overflow: hidden; border-bottom: 1px solid #cdd5c7; }
+.eyebrow { font-size: 10px; letter-spacing: 2.5px; font-weight: 700; text-transform: uppercase; }
+h1 { font: 500 clamp(42px, 6vw, 80px)/1.06 Georgia, serif; letter-spacing: -3px; margin: 20px 0; }
+.lede { color: #647269; max-width: 540px; }
+.decoration { position: absolute; width: 240px; height: 240px; right: 8%; top: 50px; border: 1px solid #b8c8b4; border-radius: 50%; background: repeating-radial-gradient(ellipse at 30% 70%, transparent 0 16px, #c3cfb8 17px 18px); transform: rotate(-25deg); opacity: .65; }
+.collection { padding-top: 24px; }
+h2 { font: 400 30px/1.3 Georgia, serif; }
+.collection h2 { display: flex; align-items: center; justify-content: space-between; }
+.collection h2 span { font: 11px 'Segoe UI', sans-serif; color: #6b796a; }
+.shelf { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 24px; }
+.card { min-width: 0; padding-bottom: 24px; }
+.cover { height: 290px; display: flex; flex-direction: column; justify-content: space-between; padding: 22px; border-radius: 3px 9px 9px 3px; color: #fff9de; text-decoration: none; background: linear-gradient(105deg,#183d35 4%, #315f4c 5%, #183d35 9%, #315f4c 100%); box-shadow: 4px 8px 14px #15382c22; transition: transform .2s, box-shadow .2s; }
+.cover:hover { transform: translateY(-7px) rotate(-1deg); box-shadow: 7px 15px 22px #15382c33; color: white; }
+.cover-alice { background: linear-gradient(110deg,#ad4d2d,#d98653); }
+.cover-frankenstein { background: linear-gradient(110deg,#253c47,#526d73); }
+.cover-time-machine { background: linear-gradient(110deg,#68562b,#ad914f); }
+.cover-number { font-size: 11px; letter-spacing: 3px; }
+.cover-symbol { font: 62px Georgia,serif; align-self: center; }
+.cover-title { font: 25px/1.1 Georgia,serif; }
+.card-info { padding: 14px 2px; }
+h3 { font: 22px/1.2 Georgia,serif; margin: 10px 0; }
+h3 a { color: #173f36; text-decoration: none; }
+.byline { color: #6d796c; font-size: 12px; }
+.summary { font-size: 13px; color: #526558; }
+.summary p { margin: 10px 0; }
+.read-link { display: flex; justify-content: space-between; margin-top: 20px; padding-top: 12px; border-top: 1px solid #cdd5c7; font-size: 12px; text-decoration: none; }
+.reading { max-width: 830px; margin: 42px auto 0; background: #fffefa; padding: 45px 65px; box-shadow: 0 10px 45px #173f360a; }
+.reading-header { border-bottom: 1px solid #d6dccf; margin-bottom: 35px; padding-bottom: 24px; }
+.reading h1 { font-size: 48px; letter-spacing: -1px; }
+.book-text { font: 19px/1.85 Georgia,serif; overflow-wrap: anywhere; }
+.book-text p { margin: 0 0 1.4em; }
+.book-text h1, .book-text h2, .book-text h3, .book-text h4, .book-text h5, .book-text h6 { line-height: 1.3; color: #214d3e; margin: 2em 0 1em; }
+.book-text h1 { font-size: 34px; }.book-text h2 { font-size: 29px; }.book-text h3 { font-size: 25px; }.book-text h4 { font-size: 22px; }.book-text h5, .book-text h6 { font-size: 20px; }
+.source { background: #edf1e7; border-left: 3px solid #728d6f; padding: 18px; font: 13px/1.6 'Segoe UI',sans-serif; }
+.book-body { padding-top: 20px; }
+.book-text blockquote { border-left: 2px solid #b3c2a5; padding-left: 24px; margin-left: 0; color: #63755d; }
+.book-text pre { white-space: pre-wrap; font: 14px/1.7 monospace; background: #f4f4ed; padding: 20px; }
+.book-text em, .book-text i { color: #586b48; }.book-text strong, .book-text b { color: #153b2d; }
+.book-text hr { border: 0; height: 1px; background: #c4d0bd; margin: 45px 0; }
+.book-text ul, .book-text ol { padding-left: 28px; }.book-text li { margin-bottom: 9px; }.book-text sup, .book-text sub { font-size: 70%; }
+.back-link { display: inline-block; margin-top: 40px; font-size: 13px; }
+.site-footer { display: flex; align-items: center; flex-wrap: wrap; gap: 20px; padding: 28px 5%; background: #173f36; color: #c9d6bf; font-size: 11px; }
+.site-footer p { margin-right: auto; font: 20px Georgia,serif; }.site-footer a { color: #dce5ce; }.site-footer span { opacity: .75; }
+time { font-variant-numeric: tabular-nums; }
+@media (max-width: 1000px) { .shelf { grid-template-columns: repeat(2,minmax(0,1fr)); }.tagline { display: none; }.modes { margin-left: auto; }.decoration { right: -100px; opacity: .25; }.cover { height: 320px; } }
+@media (max-width: 600px) { .masthead { flex-wrap: wrap; gap: 14px; }.modes { margin-left: 0; }.navigation { gap: 12px; }.nav-label { width: 100%; }.intro { padding: 35px 0; }h1 { letter-spacing: -1px; }.shelf { grid-template-columns: 1fr; gap: 10px; }.card { display: flex; gap: 18px; }.cover { flex: 0 0 38%; height: 225px; padding: 15px; }.cover-title { font-size: 19px; }.cover-symbol { font-size: 40px; }.card-info { flex: 1; min-width: 0; }.reading { padding: 24px 20px; margin-top: 20px; }.reading h1 { font-size: 36px; }.book-text { font-size: 17px; }.site-footer { display: block; }.site-footer span { display: block; margin-top: 14px; } }

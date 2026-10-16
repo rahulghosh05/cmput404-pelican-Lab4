@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Curious Shelf</title>
+<meta name="description" content="A small library of curious journeys, curated by Rahul.">
+<link id="_stylesheet" rel="stylesheet" href="https://rahulghosh05.github.io/cmput404-pelican-Lab4/theme/fancy.css">
+<script>
+function changeStylesheet(style) {
+    if (!['fancy.css', 'minimal.css', '90s.css'].includes(style)) return;
+    const sheet = document.getElementById('_stylesheet');
+    sheet.href = sheet.href.replace(/[^/]*\.css$/, style);
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<a class="brand" href="https://rahulghosh05.github.io/cmput404-pelican-Lab4/index.html"><span class="mark" aria-hidden="true"></span>The Curious Shelf</a>
+<p class="tagline">A reading room by Rahul · Est. 2026</p>
+<div class="modes" role="group" aria-label="Choose a visual style">
+<button type="button" onclick="changeStylesheet('fancy.css')">Fancy</button>
+<button type="button" onclick="changeStylesheet('minimal.css')">Minimal</button>
+<button type="button" onclick="changeStylesheet('90s.css')">90s</button>
+</div>
+</header>
+<nav class="navigation" aria-label="Library">
+<p class="nav-label">Explore the shelf</p>
+<a href="https://rahulghosh05.github.io/cmput404-pelican-Lab4/index.html">The collection</a>
+<a href="https://rahulghosh05.github.io/cmput404-pelican-Lab4/welcome.html">A shelf for curious minds</a><a href="https://rahulghosh05.github.io/cmput404-pelican-Lab4/alice.html">Alice’s Adventures in Wonderland</a><a href="https://rahulghosh05.github.io/cmput404-pelican-Lab4/frankenstein.html">Frankenstein</a><a href="https://rahulghosh05.github.io/cmput404-pelican-Lab4/time-machine.html">The Time Machine</a></nav>
+<main id="main"><section class="intro"><p class="eyebrow">FIELD NOTES / THE LIBRARY</p><h1>For the<br>curious ones.</h1><p class="lede">Follow a rabbit. Question a creation. Travel through time.<br>Extraordinary worlds, one page away.</p><span class="decoration" aria-hidden="true"></span></section>
+<section class="collection" aria-labelledby="collection-title"><h2 id="collection-title">On the shelf <span>04 entries</span></h2>
+<div class="shelf"><article class="card"><a class="cover cover-welcome" href="https://rahulghosh05.github.io/cmput404-pelican-Lab4/welcome.html" aria-label="Read A shelf for curious minds"><span class="cover-number">00</span><span class="cover-symbol" aria-hidden="true">✦</span><span class="cover-title">A shelf for curious minds</span></a><div class="card-info"><p class="eyebrow">Journal</p><h3><a href="https://rahulghosh05.github.io/cmput404-pelican-Lab4/welcome.html">A shelf for curious minds</a></h3><p class="byline">Rahul</p><div class="summary"><p>Three journeys into unfamiliar worlds, and a quiet corner of the web to read them.</p></div><a class="read-link" href="https://rahulghosh05.github.io/cmput404-pelican-Lab4/welcome.html">Open the book <span aria-hidden="true">↗</span></a></div></article>
+<article class="card"><a class="cover cover-alice" href="https://rahulghosh05.github.io/cmput404-pelican-Lab4/alice.html" aria-label="Read Alice’s Adventures in Wonderland"><span class="cover-number">01</span><span class="cover-symbol" aria-hidden="true">♠</span><span class="cover-title">Alice’s Adventures in Wonderland</span></a><div class="card-info"><p class="eyebrow">Books</p><h3><a href="https://rahulghosh05.github.io/cmput404-pelican-Lab4/alice.html">Alice’s Adventures in Wonderland</a></h3><p class="byline">Lewis Carroll</p><div class="summary">A rabbit hole, a curious child, and a world where the rules refuse to sit still.</div><a class="read-link" href="https://rahulghosh05.github.io/cmput404-pelican-Lab4/alice.html">Open the book <span aria-hidden="true">↗</span></a></div></article>
+<article class="card"><a class="cover cover-frankenstein" href="https://rahulghosh05.github.io/cmput404-pelican-Lab4/frankenstein.html" aria-label="Read Frankenstein"><span class="cover-number">02</span><span class="cover-symbol" aria-hidden="true">⚡</span><span class="cover-title">Frankenstein</span></a><div class="card-info"><p class="eyebrow">Books</p><h3><a href="https://rahulghosh05.github.io/cmput404-pelican-Lab4/frankenstein.html">Frankenstein</a></h3><p class="byline">Mary Shelley</p><div class="summary">A creation asks what it means to be human, and who must answer for a life.</div><a class="read-link" href="https://rahulghosh05.github.io/cmput404-pelican-Lab4/frankenstein.html">Open the book <span aria-hidden="true">↗</span></a></div></article>
+<article class="card"><a class="cover cover-time-machine" href="https://rahulghosh05.github.io/cmput404-pelican-Lab4/time-machine.html" aria-label="Read The Time Machine"><span class="cover-number">03</span><span class="cover-symbol" aria-hidden="true">⌛</span><span class="cover-title">The Time Machine</span></a><div class="card-info"><p class="eyebrow">Books</p><h3><a href="https://rahulghosh05.github.io/cmput404-pelican-Lab4/time-machine.html">The Time Machine</a></h3><p class="byline">H. G. Wells</p><div class="summary">A journey into the distant future turns progress into an unsettling question.</div><a class="read-link" href="https://rahulghosh05.github.io/cmput404-pelican-Lab4/time-machine.html">Open the book <span aria-hidden="true">↗</span></a></div></article>
+</div></section>
+</main>
+<footer class="site-footer"><p>A little curiosity goes a long way.</p><a href="https://www.gutenberg.org/">Books from Project Gutenberg</a><span>Built with Pelican · CMPUT 404</span></footer>
+</body>
+</html>
